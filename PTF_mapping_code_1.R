@@ -1,4 +1,7 @@
 ################Use of EUPTFv2 for making maps of SHPs using soil texture, bulk density, depth, and soil carbon maps.
+
+load("C:/Users/surya/Downloads/euptfv2-v.2.0.0/TothSzaboBrigitta-euptfv2-35e2df9/suggested_PTFs/THS_EUHYDI/THS_PTF03.RData")
+
 Thetas_PTF<- THS_PTF03
 
 Thetas_PTF$variable.importance
@@ -29,6 +32,8 @@ writeRaster(Uncertainity_Thetas_PTF, "C:/Users/surya/Downloads/Panos_SHP_data/Fo
 
 ##################################################### with OC PTFs
 
+load("C:/Users/surya/Downloads/euptfv2-v.2.0.0/TothSzaboBrigitta-euptfv2-35e2df9/suggested_PTFs/FC_EUHYDI/FC_PTF07.RData")
+
 FC_PTF07_33kpa<- FC_PTF07
 
 FC_PTF07_33kpa$variable.importance
@@ -58,6 +63,8 @@ plot(Uncertainity_FC_PTF07_33kpa)
 writeRaster(Uncertainity_FC_PTF07_33kpa, "C:/Users/surya/Downloads/SHP_data/Folder_data/Maps_withOC/Uncertainity_FC_33kpa_PTF07_modified_6_03_C.tif")
 
 #######################################################
+                   
+load("C:/Users/surya/Downloads/euptfv2-v.2.0.0/TothSzaboBrigitta-euptfv2-35e2df9/suggested_PTFs/FC2_EUHYDI/FC2_PTF07.RData")
 
 FC_PTF07_10kpa<- FC2_PTF07
 
@@ -91,6 +98,8 @@ writeRaster(Uncertainity_FC_PTF07_10kpa, "C:/Users/surya/Downloads/SHP_data/Fold
 
 #######################################################
 
+load("C:/Users/surya/Downloads/euptfv2-v.2.0.0/TothSzaboBrigitta-euptfv2-35e2df9/suggested_PTFs/WP_EUHYDI/WP_PTF07.RData")
+
 WP_PTF07_150kpa<- WP_PTF07
 
 WP_PTF07_150kpa$variable.importance
@@ -123,6 +132,8 @@ writeRaster(Uncertainity_WP_PTF07_150kpa, "C:/Users/surya/Downloads/SHP_data/Fol
 
 
 #######################################################
+
+load("C:/Users/surya/Downloads/euptfv2-v.2.0.0/TothSzaboBrigitta-euptfv2-35e2df9/suggested_PTFs/KS_EUHYDI/KS_PTF02.RData")
 
 Ks_PTF02<- KS_PTF02
 
